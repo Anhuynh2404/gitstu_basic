@@ -32,3 +32,4 @@ Theo mặc định khi tạo mới repository (git init) sẽ có một nhánh (
 #### Lấy các thay đổi từ máy chủ - git pull
 Chạy `git pull origin master` để lấy các thay đổi từ nhánh "master" trên remote về nhánh "master" trên local.
 ### 4. Nhánh và thao tác với nhánh
+Xin chào
