@@ -39,15 +39,15 @@ Mặc định sau khi tạo mới một repository với lệnh git init sẽ c�
 Trong thực tế chúng ta thường tạo thêm branch develop, đây là branch được sử dụng với mục đích phát triển. Toàn bộ members trong dự án sẽ xây dựng các chức năng từ nhánh này.<br>
 `$ git branch develop`
 #### Chuyển nhánh - git checkout
-Xem các branch đang có trên local và bạn đang ở branch nào, dấu sao (*) trước tên branch thể hiện bạn đang ở branch đó.
++ Xem các branch đang có trên local và bạn đang ở branch nào, dấu sao (*) trước tên branch thể hiện bạn đang ở branch đó.<br>
 `$ git branch`<br>
 `  develop`<br>
 `* main`<br>
-Chuyển tới nhánh develop
++ Chuyển tới nhánh develop<br>
 `$ git checkout develop`<br>
-Chúng ta đã được chuyển sang branch develop. Giả sử bạn nhận được yêu cầu là xây dựng chức năng authentication và phải tạo branch mới, branch mới cần checkout ra từ branch develop thì ta làm như sau.
++ Chúng ta đã được chuyển sang branch develop. Giả sử bạn nhận được yêu cầu là xây dựng chức năng authentication và phải tạo branch mới, branch mới cần checkout ra từ branch develop thì ta làm như sau: <br>
 `$ git checkout -b feature/authen`<br>
-feature/authen branch vừa được tạo ra, trường hợp này code của feature/authen giống hệt với develop branch.<br>
+**feature/authen branch** vừa được tạo ra, trường hợp này code của feature/authen giống hệt với develop branch.<br>
 **Chú ý**: Điểm khác biệt khi tạo branch mới với `git branch [branch_name]` và `git checkout -b [branch_name]` là:
 + Với git branch sẽ tạo branch mới từ master branch và chỉ tạo branch mới chứ không chuyển luôn sang branch mới.
 + Với git checkout -b sẽ tạo branch mới từ branch hiện tại và đồng thời chuyển sang branch mới.
